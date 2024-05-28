@@ -1,9 +1,9 @@
-<div id="blog" class="flex flex-col w-full h-auto mt-20  px-10">
+<div id="blog" class="flex flex-col w-full h-auto mt-20  sm:px-10">
     <div class="w-full h-auto flex flex-row justify-center items-center ">
         <div
             class="max-w-fit  h-auto flex flex-row justify-center items-center  border-b-2 border-black bg-white rounded-full ">
             <img class="h-[5vh] w-auto mr-5"src="{{ asset('images/cafee rojo.png') }}" alt="">
-            <span class="flex flex-row justify-center text-lg md:text-xl lg:text-6xl text-red-600 font-titulo4 font-bold">BLOGS</span>
+            <span class="flex flex-row justify-center text-lg md:text-xl lg:text-4xl text-red-600 font-titulo4 font-bold">BLOGS</span>
             <img class="h-[5vh] mr-5"src="{{ asset('images/cafee rojo.png') }}" alt="">
         </div>
     </div>

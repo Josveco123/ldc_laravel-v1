@@ -1,9 +1,9 @@
-<div class="w-full h-auto bg-gray-100 grid grid-cols-1 lg:grid-cols-3 auto-cols-auto gap-y-2 lg:gap-y-10 pl-10 mt-5 pr-10 pb-10">
-    <div class="w-[1/3vw] bg-gray-200 pb-5" style="border-bottom-left-radius: 3vw; border-bottom-right-radius: 3vw;">
+<div class="w-full h-auto bg-gray-100 grid grid-cols-1 lg:grid-cols-3 auto-cols-auto gap-y-2 lg:gap-y-10 pl-10 mt-5 pr-10 pb-2">
+    <div class="w-[1/3vw] bg-gray-200 pb-1" style="border-bottom-left-radius: 3vw; border-bottom-right-radius: 3vw;">
         <div class="flex justify-center  font-bold mt-3"  style="font-size: 1.2vw;">
             Laboratorio del Caribe SAS.
         </div>
-        <div class="flex items-center justify-center border-r-4 border-white" >
+        <div class="flex items-center justify-center border-r-4" >
             <ul class="list-disc pt-2 leading-tight text-xs sm:text-sm md:text-md lx_text-lg">
                 <li><span class="font-bold">Dirección:</span> Calle 38 No. 4A-184 Lt-1 Manz A</li>
                 <li>Parque Industrial y Comercial -Sincelejo (Sucre)</li>
@@ -14,8 +14,8 @@
             </ul>
         </div>
     </div>
-    <div class="w-[1/3vw] bg-gray-200 pb-5"  style="border-bottom-left-radius: 3vw; border-bottom-right-radius: 3vw;">
-        <div class="flex justify-center font-bold mt-3 text-sm md:text-md lx_text-lg">
+    <div class="w-[1/3vw] bg-gray-200 pb-1"  style="border-bottom-left-radius: 3vw; border-bottom-right-radius: 3vw;">
+        <div class="flex justify-center font-bold mt-3 text-sm md:text-md lg:text-lg">
             Siguenos en redes sociales.
         </div>
         <div class="flex items-center justify-center border-r-4 border-white space-x-10 pt-5">
@@ -35,7 +35,7 @@
             </a>
         </div>
     </div>
-    <div class="w-[1/3vw] bg-gray-200 pb-5" style="border-bottom-left-radius: 3vw; border-bottom-right-radius: 3vw;">
+    <div class="w-[1/3vw] bg-gray-200 pb-1" style="border-bottom-left-radius: 3vw; border-bottom-right-radius: 3vw;">
         <div class="flex justify-center font-bold mt-3 text-sm md:text-md lx_text-lg">
             Contactanos
         </div>

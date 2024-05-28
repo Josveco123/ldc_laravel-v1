@@ -3,8 +3,8 @@
 <span class="text-lg">Procesando distribuidores</span>
 @endsection
 @section('crud')
-    <div class="py-10">
-        <div class="max-w-full  mx-auto sm:px-6 lg:px-8">
+    <div class="pb-10 pt-3">
+        <div class="max-w-full  mx-auto sm:px-6 lg:px-8 pb-2">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6 lg:p-8">
                 <div class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
 

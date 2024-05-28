@@ -30,10 +30,10 @@
         <!-- Estas son las lineas rojas -->
 
         <div class="w-full flex flex-grow gap-x-0 ">
-            <div class="w-[25vw] max-h-full ml-14 rounded-r-full pr-4 bg-red-600 hidden lg:block ">
+            <div class="w-[25vw] max-h-full ml-5 lg:ml-14 rounded-r-full pr-4 bg-red-600 hidden lg:block ">
                 <img class="w-[25vw] h-full rounded-r-full" src="{{ asset('images/nos11.jpg') }}" alt="" srcset="">
             </div>
-            <p class="px-20 lg:px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw] pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw] pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Reseña Historica
                 </span>
@@ -55,7 +55,7 @@
                     srcset="">
             </div>
 
-            <p class="px-20 lg:px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Politícas de la calidad</span>
 
@@ -82,7 +82,7 @@
                 <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos31.jpg') }}" alt=""
                     srcset="">
             </div>
-            <p class="px-20 lg:px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Mision</span>
 
@@ -101,7 +101,7 @@
                 <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos44.jpeg') }}" alt=""
                     srcset="">
             </div>
-            <p class="px-20 lg:px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Vision</span>
 
@@ -119,7 +119,7 @@
                 <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos61.jpg') }}" alt=""
                     srcset="">
             </div>
-            <p class="px-20 lg:px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Valores corporativos</span>
                 <br />

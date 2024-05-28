@@ -20,35 +20,33 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <img class="ml-20 w-24 max-h-full" src="{{asset("images/logo.png")}}" alt="" srcset="">
-            <div class="container">
-                <a class="font-sans border-2 h-16 pt-3 px-3 text-lg text-black bg-gray-100 hover:bg-gray-50 font-bold rounded-lg hover:scale-110" href="{{ url('/') }}" style="text-decoration: none;">
+
+            <div class="container flex flex-row text-sm md:text-lg h-auto w-full justify-between mt-3">
+
+                <a class="flex flex-row text-center border-2  items-center font-sans text-black/50 hover:text-black h-12 p-1 px-1 w-auto bg-gray-100 hover:bg-gray-50 font-bold rounded-lg" href="{{ url('/') }}" style="text-decoration: none;">
                     Home
                 </a>
 
-                <div class=" navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
-                    </ul>
+                <div class="text-red-600" id="navbarSupportedConten">
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto w-auto text-red-600 flex flex-row justify-center items-center list-none">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
-                                <li class="nav-item font-sans border-2 p-2 text-lg bg-gray-100 font-bold rounded-lg  hover:bg-gray-50 hover:scale-110">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
+                            <li class="w-auto nav-item font-sans border-2 p-2  bg-gray-100 font-bold rounded-lg mx-10 hover:bg-gray-50">
+                                    <a class="no-underline  text-black/50 hover:text-black" href="{{ route('login') }}">Login</a>
+                            </li>
                             @endif
 
                             @if (Route::has('register'))
-                                <li class="nav-item font-sans border-2 p-2 text-lg bg-gray-100 font-bold rounded-lg mx-10  hover:bg-gray-50 hover:scale-110">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <li class="w-auto nav-item font-sans border-2 p-2  bg-gray-100 font-bold rounded-lg mx-10 hover:bg-gray-50">
+                                <a class="no-underline  text-black/50 hover:text-black"href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
                                                 <!-- Esta opcion desactiva al usuario registrado -->
-                            <li class="nav-item dropdown font-sans border-2 p-2 text-lg bg-gray-100 font-bold rounded-lg">
+                            <li class="nav-item dropdown font-sans border-2 p-2  bg-gray-100 font-bold rounded-lg">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle hover:bg-gray-50 hover:scale-110" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                    {{ Auth::user()->name }}

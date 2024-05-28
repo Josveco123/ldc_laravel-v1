@@ -1,15 +1,14 @@
 @extends('home')
 
 @section('crud')
-    <div class="py-12 " style="height: 80vh;">
+    <div class="pb-4 pt-2 h-auto">
 
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 h-[65vh]">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 h-auto py-2">
             <h2
                 class="flex flex-row justify-center align-content-center font.bold text-2xl text-gray-800 border-y-2 border-dashed bg-gray-200 border-gray-300 dark:text-white leading-tight">
                 Creacion de Distribuidor
             </h2>
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6 lg:p-8 h-full">
-
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-3 lg:p-8 h-auto">
 
                 <form method="POST" action="{{ route('distribuidorstore') }}" enctype="multipart/form-data"
                     class="max-w-2xl mx-auto">
@@ -116,11 +115,8 @@
                                 class=" text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
                                 Cancel
                             </a>
-
                         </div>
                     </div>
-
-
                 </form>
 
             </div>

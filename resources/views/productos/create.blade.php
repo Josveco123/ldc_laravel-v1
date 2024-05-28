@@ -1,7 +1,7 @@
 @extends('home')
 
 @section('crud')
-    <div class="py-12 " style="height: 80vh;">
+    <div class="py-2 h-auto">
 
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 h-[65vh]">
             <h2

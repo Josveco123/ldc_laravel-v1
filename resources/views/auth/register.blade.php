@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container grid grid-cols-1  lg:grid-cols-2  pt-20">
-    <div class="flex flex-col justify-center items-center w-full h-full border-r-2 border-black bg-red-50 p-10">
+<div class="container grid grid-cols-1  lg:grid-cols-2  pt-4 lg:pt-20 lg:space-x-2">
+    <div class="flex flex-col justify-center items-center w-full h-full border-2 rounded-3xl bg-red-50 p-4 md:p-10 mr-2">
 
         <div class="text-center text-lg p-2 text-red-600 ">¡Bienvenido a <strong> Laboratorio del Caribe sas!</strong>
         </div>
-        <div class="text-lg text-justify">
+        <div class="hidden lg:block text-lg text-justify p-2">
             <span>
                 Nos complace darte la bienvenida a nuestra plataforma en línea, donde encontrarás un mundo de
                 posibilidades para mejorar la calidad de vida. Al validar tu ingreso, has dado el primer paso hacia
@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div class="row justify-content-center bg-blue-50 py-20">
+    <div class="row justify-content-center bg-blue-50 py-4 lg:py-20 border-2 rounded-3xl">
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
@@ -122,7 +122,7 @@
                                     @enderror
                                 </div>
                             </div>
-                        <!---
+                            <!---
                             NRazon ciudad
 
                             --->

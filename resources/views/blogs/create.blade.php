@@ -1,19 +1,19 @@
 @extends('home')
 
 @section('crud')
-    <div class="py-12 " style="height: 80vh;">
+    <div class="pt-3 pb-4 h-auto">
 
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 h-[65vh]">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 h-auto">
             <h2
                 class="flex flex-row justify-center align-content-center font.bold text-2xl text-gray-800 border-y-2 border-dashed bg-gray-200 border-gray-300 dark:text-white leading-tight">
                 Creacion de Blogs
             </h2>
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6 lg:p-8 h-full">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-3 lg:p-5 h-auto">
 
                 <!--comienza el formulario        --->
 
                 <form method="POST" action="{{ route('blogstore') }}" enctype="multipart/form-data"
-                    class="w-[40vw] h-full mx-auto ">
+                    class="w-[40vw] h-auto mx-auto ">
                     @csrf
 
                     <div class="mb-2">
