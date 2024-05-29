@@ -61,13 +61,12 @@ Route::get('/nosotros', [Nosotros::class, 'nosotros'])->name('nosotros');
 Route::get('/contactos', [Contactos::class, 'contactos'])->name('contactos');
 
 Route::post('/mostrar-ficha/{archivo}', [FichaController::class, 'mostrarficha'])
-    ->name('mostrar-ficha')
-    ->middleware('auth');
+    ->name('mostrar-ficha');
 
 
 Route::post('/web', [Mailwebcontacto::class, 'enviarCorreo'])->name('enviarcorreo');
 Route::get('/distribuidor2', [Distribuidors::class, 'distribuidor2'])->name('distribuidor2');
-Route::get('/productos2', [Productos::class, 'productos'])->name('productos2')->middleware('auth');
+Route::get('/productos2', [Productos::class, 'productos'])->name('productos2');
 Route::get('/distribuidores', [Distribuidors::class, 'distribuidores'])->name('distribuidores');
 
 // area de routeer para usuarios

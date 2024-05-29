@@ -42,9 +42,9 @@
                                 <h1 class="max-w-full text-sm lg:text-sm flex flex-row justify-center text-center font-titulo5">
                                 {{ $producto->slogan }}</h1>
 
-                            <div class="max-w-full  flex flex-row justify-center text-center text-white font-bold">
+                            <div class="max-w-full  flex flex-row justify-center text-center text-white font-bold sm:">
 
-                                <form id="form-ficha" action="{{ route('mostrar-ficha', ['archivo' => $producto->ficha]) }}" method="POST" target = '_blank'>
+                                <form id="form-ficha" action="{{ route('mostrar-ficha', ['archivo' => $producto->ficha]) }}" method="POST">
                                     @csrf
                                     <input type="hidden" name="producto" value="{{ json_encode($producto) }}">
                                     <button type="submit" class="inline-block w-32 h-8 mt-5 border-2  hover:bg-gray-500 hover:scale-110 text-center font-bold text-white bg-gray-400" style="border-radius: 3vw;">
@@ -61,5 +61,14 @@
     @include('layouts.footer')
 @endsection
 
-
-
+<script>
+    document.getElementById('form-ficha').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevenir el envío del formulario por defecto
+        var form = this;
+        var url = form.getAttribute('action');
+        var win = window.open('', '_blank'); // Abrir una ventana en blanco
+        form.target = '_blank'; // Establecer el target del formulario como '_blank'
+        form.submit(); // Enviar el formulario
+        win.location.href = url; // Cargar la URL en la nueva ventana
+    });
+</script>
