@@ -7,7 +7,7 @@
             <ul class="list-disc pt-2 leading-tight text-xs sm:text-sm md:text-md lx_text-lg">
                 <li><span class="font-bold">Dirección:</span> Calle 38 No. 4A-184 Lt-1 Manz A</li>
                 <li>Parque Industrial y Comercial -Sincelejo (Sucre)</li>
-                <li><span class="font-bold">Telefax:</span> 605 2732307 - 605 2806160</li>
+                <li><span class="font-bold">Telefax:</span> 605 2732307</li>
                 <li><span class="font-bold">Movil:</span> (+57) 312 686 9891</li>
                 <li><span class="font-bold">E-Mail:</span> comercial@laboratoriodelcaribe.com</li>
                 <li><span class="font-bold">Banco de Colombia:</span> C.C. Nro.(506 04761202)</li>

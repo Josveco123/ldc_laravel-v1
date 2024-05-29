@@ -67,7 +67,7 @@
                             <li class="w-full lg:w-auto hover:bg-gray-300 rounded-xl mt-0 lg:mt-2">
                                 <a id="home" href="{{ route('welcome') }}"
                                     class="w-full px-2 bg-gray-100  text-gray-900  hover:text-red-600 hover:scale-105  hover:bg-gray-200 rounded-lg">
-                                    Home</a>
+                                    Inicio</a>
                             </li>
                             <li class="w-full lg:w-auto hover:bg-gray-300 rounded-xl">
                                 <a id="nosotros" href="{{ route('nosotros') }}"
@@ -127,7 +127,7 @@
                                     @if (Auth::check())
                                         <span>{{ Str::limit(ucwords(strtolower(Auth::user()->name)), 12) }}</span>
                                     @else
-                                        <span id="verRegistro">Validarse</span>
+                                        <span id="verRegistro">Usuarios</span>
                                     @endif
                                 </span>
                             </form>

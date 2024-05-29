@@ -4,7 +4,7 @@
         var contenidoOriginal = boton.textContent; // Guarda el contenido original
 
         // Cambiar el contenido del elemento al cargar la página
-        boton.textContent = "HOME";
+        boton.textContent = "INICIO";
         boton.classList.add("text-red-600", "bg-white");
 
         // Evitar que el enlace recargue la página
@@ -51,7 +51,7 @@
             <div class="w-full h-full grid grid-cols-2 gap-x-10 sm:grid-cols-3 lg:grid-cols-4">
 
                 @foreach ($distribuidor as $dist)
-                <a class=" flex flex-row justify-center p-1 w-auto h-28 md:h-36 mb-1 lg:h-20 rounded-full bg-gray-0 border-2 border-red-200 border-dotted" href="{{ $dist->web }}"  target="_blank" alt="no hay foto">
+                <a class=" flex flex-row justify-center p-1 w-auto h-28 md:h-36 mb-1 lg:h-16 rounded-full bg-gray-0 border-2 border-red-200 border-dotted" href="{{ $dist->web }}"  target="_blank" alt="no hay foto">
                     <img class="object-fill border bg-gray-100 hover:scale-75 lg:hover:scale-100 hover:border-2 rounded-xl border-red-200 hover:rounded-t-full hover:p-1 hover:shadow-inner hover:shadow-red-600" src="imagendist/{{ $dist->imagen }}" alt="{{ $dist['distlogo'] }}">
                 </a>
                 @endforeach

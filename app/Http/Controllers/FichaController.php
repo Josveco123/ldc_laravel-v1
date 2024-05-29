@@ -44,17 +44,12 @@ class FichaController extends Controller
                 return $this->generarPDF($producto->ficha);
             };
         } else {
-
-            return response()->json([
-                'message' => 'No está autorizado para realizar esta acción. Por favor, inicie sesión.',
-                'success' => false
-            ]);
-    }
-
+            return view('mensage');
+        }
     }
     private function generarPDF($nombreImagen)
     {
-        $rutaImagen = public_path('/imagen/'.$nombreImagen);
+        $rutaImagen = public_path('/imagen/' . $nombreImagen);
 
         // Verifica si la imagen existe
         if (file_exists($rutaImagen)) {

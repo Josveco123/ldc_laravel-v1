@@ -12,9 +12,9 @@
         @foreach ($blogs as $blog)
             <div class="w-auto h-full border-1 pt-1 pr-2 bg-red-600" style="border-radius: 3vw;">
                 <div class="w-full h-full p-4 border-1 bg-gray-50" style="border-radius: 3vw;">
+                    <div class="w-full text-center text-black font-bold font-titulo2 text-md md:text-xl lg:text-1xl 2xl:text-2xl">{{ $blog->titulo }}</div>
                     <img class="float-left mr-4 mb-2 h-36 w-36 xl:h-48 xl:w-48 object-cover object-center" style="border-radius: 3vw;"
                         src="{{ asset("imagenblog/{$blog->imagen}") }}" alt="Descripción de la imagen">
-                    <div class="text-black font-bold font-titulo2 text-md md:text-xl lg:text-1xl 2xl:text-2xl">{{ $blog->titulo }}</div>
                     <p class="text-justify mt-4 font-mote text-md md:text-xl lg:text-1xl 2xl:text-2xl"> {!! nl2br(e($blog->descripcion)) !!}</p>
                     <p class="text-1xl text-center mt-4 font-biografia1 font-weight-normal">
                         <span class="font-bold ">{{ $blog->bibliografia }}</span>
