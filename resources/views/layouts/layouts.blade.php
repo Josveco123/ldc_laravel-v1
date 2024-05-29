@@ -44,8 +44,7 @@
 
             <div id="logo"
                 class="w-full h-24  md:w-[95vw] flex flex-wrap items-center justify-between mx-auto pl-4 lg:pl-10 pr-3 mb-5">
-                <a href="{{ route('welcome') }}"
-                    class="h-20 sm:h-20 md:h-24 py-4 px-2 w-auto flex items-center mr-3">
+                <a href="{{ route('welcome') }}" class="h-20 sm:h-20 md:h-24 py-4 px-2 w-auto flex items-center mr-3">
                     <img src="{{ asset('images/logo.png') }}" class=" max-h-full w-auto" alt="Logo">
                 </a>
                 <!--
@@ -119,13 +118,14 @@
                             <form action="{{ route('logout') }}" method="POST">
                                 @csrf
 
-                                <a type="submit" class="flex w-full lg:w-8 lg:h-8 pt-2 justify-center items-center mx-auto my-auto text-center">
-                                    <img class="w-5 h-5 object-cover mx-auto my-auto" src="{{ asset('images/usuario.png') }}"
-                                        alt="usuario">
+                                <a type="submit"
+                                    class="flex w-full lg:w-8 lg:h-8 pt-2 justify-center items-center mx-auto my-auto text-center">
+                                    <img class="w-5 h-5 object-cover mx-auto my-auto"
+                                        src="{{ asset('images/usuario.png') }}" alt="usuario">
                                 </a>
                                 <span class="hidden ml-1 sm:flex text-xs justify-center items-center text-center">
                                     @if (Auth::check())
-                                    <span>{{ ucfirst(Str::limit(Auth::user()->name, 15)) }}</span>
+                                        <span>{{ Str::limit(ucwords(strtolower(Auth::user()->name)), 12) }}</span>
                                     @else
                                         <span id="verRegistro">Validarse</span>
                                     @endif

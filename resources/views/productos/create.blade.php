@@ -1,9 +1,9 @@
 @extends('home')
 
 @section('crud')
-    <div class="py-2 h-auto">
+    <div class="flex flex-col w-full py-2 h-auto px-20">
 
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 h-[65vh]">
+        <div class="w-full mx-auto sm:px-6 lg:px-8 h-auto">
             <h2
                 class="flex flex-row justify-center align-content-center font.bold text-2xl text-gray-800 border-y-2 border-dashed bg-gray-200 border-gray-300 dark:text-white leading-tight">
                 Creacion de Productos

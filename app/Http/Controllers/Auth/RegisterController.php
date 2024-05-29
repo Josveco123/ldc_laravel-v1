@@ -73,6 +73,6 @@ class RegisterController extends Controller
             'razon_social' => $data['razon_social'],
             'whatsapp' => $data['whatsapp'],
             'ciudad' => $data['ciudad']
-        ]);
+        ])->assignRole('client');
     }
 }
