@@ -24,7 +24,7 @@
 
     <div id='lado1' class="pb-1 h-full w-full mt-1 xl:w-4/12  flex flex-col justify-start items-center text-center order-2 xl:order-1 pr-5">
         <div class="flex flex-col justify-center w-full h-auto">
-            <span class="w-auto h-auto flex flex-row justify-center px-2 text-red-600 text-lg md:text-1xl lg:text-2xl ">
+            <span class="w-auto h-auto flex flex-row justify-center px-2 text-red-600 text-sm md:text-lg">
                 Como llegar
             </span>
             <div class="flex flex-row space-x-2 w-full h-full object-fill">
@@ -42,7 +42,7 @@
 
         <!-- Distribuidores --->
         <div class="flex flex-col w-full h-full mt-4 pt-1 border-2 border-gray-100 shadow-xl shadow-gray-300 rounded-3xl px-3 pb-3">
-            <span class="w-full mb-2 h-auto text-lg md:text-1xl lg:text-2xl text-red-600 flex justify-center ">
+            <span class="w-full mb-2 h-auto text-lg  text-red-600 flex justify-center ">
                 Canal de distribucion
             </span>
             <!--

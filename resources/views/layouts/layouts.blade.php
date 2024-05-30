@@ -63,7 +63,7 @@
                     <div id="mnu-user"
                         class="w-24 text-xs ml-[-30px] md:ml-[-15px] sm:w-28 md:w-32 lg:w-auto h-auto  hidden lg:flex bg-gray-100 border-rbl-4 border-white rounded-xl justify-start lg:bg-gray-100 absolute z-100 lg:left-0 lg:static lg:top-0  items-center lg:justify-center ">
                         <ul
-                            class="pb-2 w-full lg:w-auto h-auto flex flex-col  list-none justify-start items-start font-normal sm:text-sm md:text-normal lg:text-sm xl:text-lg 3xl:text-xl rounded-lg space-y-2 lg:space-x-6 lg:flex-row ">
+                            class="pb-2 w-full lg:w-auto h-auto flex flex-col  list-none justify-start items-start font-normal sm:text-sm md:text-normal lg:text-sm  rounded-lg space-y-2 lg:space-x-6 lg:flex-row ">
                             <li class="w-full lg:w-auto hover:bg-gray-300 rounded-xl mt-0 lg:mt-2">
                                 <a id="home" href="{{ route('welcome') }}"
                                     class="w-full px-2 bg-gray-100  text-gray-900  hover:text-red-600 hover:scale-105  hover:bg-gray-200 rounded-lg">
@@ -97,9 +97,9 @@
                     @if (Auth::check())
                         @hasrole('admin|master')
                             <div
-                                class="hidden lg:flex w-auto h-9  px-2 mr-[2vw] flex-row relative justify-center items-center bg-gray-100 text-xs text-gray-900 hover:scale-105 hover:text-red-600 border-2 hover:rounded-lg hover:bg-gray-200 rounded-lg">
+                                class="hidden lg:flex w-auto h-auto  px-2 mr-2 flex-row relative justify-center items-center bg-gray-100 text-xs text-gray-900 hover:scale-105 hover:text-red-600 border-2 hover:rounded-lg hover:bg-gray-200 rounded-lg">
                                 <a class="justify-center items-center" href="{{ url('/home') }}">
-                                    C.R.U.D.
+                                    CRUD
                                 </a>
                             </div>
                         @endhasrole
@@ -111,25 +111,25 @@
                 <div id="gralregistro" class="flex h-24 order-1 lg:order-3 flex-row mr-10 items-center justify-center">
 
                     <div id="menuregister-1"
-                        class="z-[50] h-auto order-1 lg:order-3 flex-row justify-center items-center  text-center relative">
+                        class="z-[50] w-auto h-auto order-1 lg:order-3 flex flex-row justify-center items-center  text-center relative">
 
-                        <div id="mostrarregistra"
-                            class="w-auto h-16 p-2 flex flex-col justify-center items-center text-center my-auto bg-gray-100 text-xl text-gray-900 border-2 rounded-full hover:scale-105 hover:rounded-2xl hover:bg-gray-200 hover:text-red-600 hover:border-2 hover:border-white">
-                            <form action="{{ route('logout') }}" method="POST">
+                        <div id="mostrarregistra"  class="w-auto h-auto flex flex-row justify-center items-center text-center">
+                            <form action="{{ route('logout') }}" method="POST" class="p-2 flex flex-row justify-center items-center text-center  bg-gray-100 text-lg text-gray-900 border-2 rounded-3xl  hover:rounded-3xl hover:bg-gray-200 hover:text-red-600 hover:border-2 hover:border-white">
                                 @csrf
 
-                                <a type="submit"
-                                    class="flex w-full lg:w-8 lg:h-8 pt-2 justify-center items-center mx-auto my-auto text-center">
-                                    <img class="w-5 h-5 object-cover mx-auto my-auto"
-                                        src="{{ asset('images/usuario.png') }}" alt="usuario">
-                                </a>
-                                <span class="hidden ml-1 sm:flex text-xs justify-center items-center text-center">
+                                <a class="w-auto h-auto hidden ml-1 sm:flex justify-center items-center text-black/60 text-center mr-2 "
+                                    style="height: 12px;font-size:10px;">
                                     @if (Auth::check())
                                         <span>{{ Str::limit(ucwords(strtolower(Auth::user()->name)), 12) }}</span>
                                     @else
-                                        <span id="verRegistro">Usuarios</span>
+                                        <span id="verRegistro">Usuario</span>
                                     @endif
-                                </span>
+                                </a>
+                                <a type="submit"
+                                    class="flex w-auto h-auto justify-center items-center mx-auto my-auto text-center ">
+                                    <img class="w-4 h-4 object-cover"
+                                        src="{{ asset('images/usuario.png') }}" alt="usuario">
+                                </a>
                             </form>
                         </div>
 
