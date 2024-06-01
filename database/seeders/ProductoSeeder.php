@@ -25,6 +25,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 1*/
         Productos::create([
+            'codigo' => 'A002',
             'nombre' => 'Artrixin Gel',
             'presentacion' => 'Tubo x 30g',
             'slogan' => '“Para inflamación y dolor Artrixin gel es lo mejor”',
@@ -33,6 +34,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 2*/
         Productos::create([
+            'codigo' => 'A003',
             'nombre' => 'Nomante pastillas',
             'presentacion' => 'Caja x 24 sobres x 4 pastillas',
             'slogan' => '“Garganta fresca y despejada Nomante es la indicada””',
@@ -41,6 +43,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 3*/
         Productos::create([
+            'codigo' => 'A004',
             'nombre' => 'Aceite de Almendra',
             'presentacion' => 'Frasco x 30ml',
             'slogan' => '“******”',
@@ -49,6 +52,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 4*/
         Productos::create([
+            'codigo' => 'A005',
             'nombre' => 'Aceite de Coco',
             'presentacion' => 'Frasco x 30ml',
             'slogan' =>  '“******”',
@@ -57,6 +61,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 5*/
         Productos::create([
+            'codigo' => 'A006',
             'nombre' => 'Aceite de Comer',
             'presentacion' => 'Frasco x 30ml',
             'slogan' => '******',
@@ -65,6 +70,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 6*/
         Productos::create([
+            'codigo' => 'A007',
             'nombre' => 'Acido Borico',
             'presentacion' => 'Caja x 25 sobres x 10g',
             'slogan' =>  '“******”',
@@ -73,6 +79,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 7*/
         Productos::create([
+            'codigo' => 'A008',
             'nombre' => 'Acido Salicilico',
             'presentacion' => 'Caja x 25 sobres x 7g',
             'slogan' =>  '“******”',
@@ -81,6 +88,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 8*/
         Productos::create([
+            'codigo' => 'A009',
             'nombre' => 'Alcanfor',
             'presentacion' => 'Caja x 25 sobres x 7g',
             'slogan' =>  '“******”',
@@ -89,6 +97,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 9*/
         Productos::create([
+            'codigo' => 'A010',
             'nombre' => 'Alumbre',
             'presentacion' => ' Caja x 25 sobres x 20g',
             'slogan' =>  '“******”',
@@ -97,6 +106,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 10*/
         Productos::create([
+            'codigo' => 'A011',
             'nombre' => 'Azucar de leche',
             'presentacion' => 'Caja x 25 sobres x 10g',
             'slogan' =>  '“******”',
@@ -105,6 +115,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 11*/
         Productos::create([
+            'codigo' => 'A012',
             'nombre' => 'Bicarbonato de sodio',
             'presentacion' => 'Caja x 25 sobres x 20g',
             'slogan' =>  '“******”',
@@ -113,6 +124,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 12*/
         Productos::create([
+            'codigo' => 'A013',
             'nombre' => 'Glicerina',
             'presentacion' => 'Frasco x 30ml',
             'slogan' =>  '“******”',
@@ -121,6 +133,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 13*/
         Productos::create([
+            'codigo' => 'A014',
             'nombre' => 'Sal de Epsom',
             'presentacion' => 'Caja x 25 sobres x20g',
             'slogan' =>  '“******”',
@@ -129,6 +142,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 14*/
         Productos::create([
+            'codigo' => 'A015',
             'nombre' => 'Sal Glauber',
             'presentacion' => 'Caja x 25 sobres x 20g',
             'slogan' =>  '“******”',
@@ -137,6 +151,7 @@ class ProductoSeeder extends Seeder
         ]);
         /* 15*/
         Productos::create([
+            'codigo' => 'A0016',
             'nombre' => 'Vaselina Pura',
             'presentacion' => 'Pote x 20g, y x 100g',
             'slogan' =>  '“******”',

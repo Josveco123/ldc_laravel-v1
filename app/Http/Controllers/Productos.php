@@ -13,7 +13,8 @@ class Productos extends Controller
      */
     public function index()
     {
-        $productos = ModelsProductos::paginate(5);
+        // $productos = ModelsProductos::paginate(5);
+        $productos = ModelsProductos::orderBy('codigo')->paginate(5);
 
         return view('productos.index', ['productos' => $productos]);
     }
@@ -104,6 +105,7 @@ class Productos extends Controller
 $producto = ModelsProductos::findOrFail($id); // Encuentra el producto por su ID
 
 // Actualiza los campos del producto con los datos del formulario
+$producto->codigo = $request->input('codigo');
 $producto->nombre = $request->input('nombre');
 $producto->presentacion = $request->input('presentacion');
 $producto->slogan = $request->input('slogan');
@@ -162,7 +164,8 @@ try {
     public function productos()
     {
         // Obtener todos los productos desde la base de datos
-        $productos = ModelsProductos::all();
+       // $productos = ModelsProductos::all();
+       $productos = ModelsProductos::orderBy('codigo')->get();
 
         return view('productos', ['productos' => $productos]);
     }

@@ -12,18 +12,26 @@
 
                 <!--comienza el formulario        --->
 
-                <form method="POST" action="{{ route('productostore') }}" enctype="multipart/form-data"
-                    class="max-w-2xl mx-auto">
+                <form method="POST" action="{{ route('productostore') }}" enctype="multipart/form-data" class="w-sm px-10">
                     @csrf
-
-                    <div class="mb-2">
-                        <label for="nombre"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
-                        <input type="text" name="nombre" id="nombre"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            required>
+                    <div class="flex flex-row space-x-4 mb-2">
+                        <div class="w-10/12">
+                            <label for="nombre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                Nombre
+                            </label>
+                            <input type="text" name="nombre" id="nombre"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required>
+                        </div>
+                        <div class="w-2/12">
+                            <label for="codigo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                codigo
+                            </label>
+                            <input type="text" name="codigo" id="codigo"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required>
+                        </div>
                     </div>
-
                     @if ($errors->any())
                         <div class="mb-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
                             role="alert">

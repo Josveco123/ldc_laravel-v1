@@ -2,23 +2,39 @@
 
 @section('crud')
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="w-full px-10 sm:px-6 ">
             <h2
                 class="flex flex-row justify-center align-content-center font.bold text-2xl text-gray-800 border-y-2 border-dashed bg-gray-200 border-gray-300 dark:text-white leading-tight">
                 Edicion de Productos
             </h2>
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6 lg:p-8">
+            <div
+                class="h-auto bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6 lg:p-8">
 
-                <form method="POST" action="{{ route('productoupdate', $productos->id) }}" class="max-w-sm mx-auto" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('productoupdate', $productos->id) }}" class="w-full"
+                    enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
-                    <div class="mb-2">
-                        <label for="nonbre"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" value="{{ old('name', $productos->nombre) }}"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            required>
+                    <div class="flex flex-row space-x-4">
+                        <div class="w-10/12">
+                            <label for="nonbre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                Nombre
+                            </label>
+                            <input type="text" name="nombre" id="nombre"
+                                value="{{ old('name', $productos->nombre) }}"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required>
+                        </div>
+                        <div class="w-2/12">
+                            <label for="codigo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                codigo
+                            </label>
+                            <input type="text" name="codigo" id="codigo"
+                                value="{{ old('name', $productos->codigo) }}"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required>
+                        </div>
                     </div>
+
 
                     @if ($errors->any())
                         <div class="mb-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
@@ -63,7 +79,8 @@
                                             <div
                                                 class="absolute zone-10 flex items-center justify-center mt-1 mx-1 w-full h-full bg-transparent p-1">
 
-                                                <img id="fichaSeleccionada" src="/imagen/{{ $productos->ficha }}"  class="w-full h-full object-contain"
+                                                <img id="fichaSeleccionada" src="/imagen/{{ $productos->ficha }}"
+                                                    class="w-full h-full object-contain"
                                                     style="max-width: 100%; max-height: 100%;">
                                             </div>
                                             <svg class="w-10 h-10 text-purple-400 group-hover:text-purple-600"
@@ -100,7 +117,8 @@
                                         <div class='relative flex flex-col items-center justify-center p-1 h-full'>
                                             <div
                                                 class="absolute zone-10 flex items-center justify-center mt-1 mx-1 w-full h-full bg-transparent p-1">
-                                                <img id="imagenSeleccionada" src="/imagen/{{ $productos->imagen }}"  class="w-full h-full object-contain"
+                                                <img id="imagenSeleccionada" src="/imagen/{{ $productos->imagen }}"
+                                                    class="w-full h-full object-contain"
                                                     style="max-width: 100%; max-height: 100%;">
                                             </div>
                                             <svg class="w-10 h-10 text-purple-400 group-hover:text-purple-600"
