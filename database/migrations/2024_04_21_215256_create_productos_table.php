@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
+            $table->string('codigo',10)->default('ldc001');
             $table->string('nombre',120);
             $table->string('presentacion',120);
             $table->string('slogan',120);

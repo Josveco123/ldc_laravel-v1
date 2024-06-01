@@ -38,6 +38,7 @@ class Productos extends Controller
             'presentacion' => 'required|string|min:5|max:120',
             'slogan' => 'required|string|min:5|max:120', // Cambiado a 'string'
             'imagen' => 'required|image|mimes:jpeg,png,svg|max:1024',
+            'codigo' => 'required|string|min:0|max:15',
             'ficha' => 'required|image|mimes:jpeg,png,svg|max:1024',
         ]);
 
@@ -91,6 +92,7 @@ class Productos extends Controller
         // Validar los datos del formulario
 
     $request->validate([
+    'codigo' => 'nullable|string|min:0|max:15',
     'nombre' => 'required|string|min:5|max:120',
     'presentacion' => 'required|string|min:5|max:120',
     'slogan' => 'required|string|min:5|max:120', // Cambiado a 'string'

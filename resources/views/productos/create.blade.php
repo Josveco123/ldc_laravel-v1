@@ -12,8 +12,9 @@
 
                 <!--comienza el formulario        --->
 
-                <form method="POST" action="{{ route('productostore') }}" enctype="multipart/form-data" class="max-w-2xl mx-auto">
-                 @csrf
+                <form method="POST" action="{{ route('productostore') }}" enctype="multipart/form-data"
+                    class="max-w-2xl mx-auto">
+                    @csrf
 
                     <div class="mb-2">
                         <label for="nombre"

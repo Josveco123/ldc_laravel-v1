@@ -113,12 +113,12 @@
                     <div id="menuregister-1"
                         class="z-[50] w-auto h-auto order-1 lg:order-3 flex flex-row justify-center items-center  text-center relative">
 
-                        <div id="mostrarregistra"  class="w-auto h-auto flex flex-row justify-center items-center text-center">
-                            <form action="{{ route('logout') }}" method="POST" class="p-2 flex flex-row justify-center items-center text-center  bg-gray-100 text-lg text-gray-900 border-2 rounded-3xl  hover:rounded-3xl hover:bg-gray-200 hover:text-red-600 hover:border-2 hover:border-white">
+                        <div id="mostrarregistra"  class="w-auto h-full flex flex-row justify-center items-center text-center ">
+                            <form action="{{ route('logout') }}" method="POST" class="h-auto p-2 mt-5 flex flex-row justify-center items-center text-center  bg-gray-100 text-lg text-gray-900 border-2 rounded-3xl  hover:rounded-3xl hover:bg-gray-200 hover:text-red-600 hover:border-2 hover:border-white">
                                 @csrf
 
                                 <a class="w-auto h-auto hidden ml-1 sm:flex justify-center items-center text-black/60 text-center mr-2 "
-                                    style="height: 12px;font-size:10px;">
+                                    style="height: 16px;font-size:14px;">
                                     @if (Auth::check())
                                         <span>{{ Str::limit(ucwords(strtolower(Auth::user()->name)), 12) }}</span>
                                     @else

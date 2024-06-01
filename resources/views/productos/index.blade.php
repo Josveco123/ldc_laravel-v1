@@ -1,6 +1,6 @@
 @extends('home')
-@section("proceso")
-<span class="text-lg">Procesando Productos</span>
+@section('proceso')
+    <span class="text-lg">Procesando Productos</span>
 @endsection
 @section('crud')
     <div class="py-10">
@@ -28,36 +28,49 @@
                         </thead>
                         <tbody>
                             @foreach ($productos as $producto)
-                            <tr>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">{{ $producto->id }}</td>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">{{ $producto->nombre }}</td>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">{{ $producto->presentacion }}</td>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">{{ $producto->slogan }}</td>
-                                <td class=" border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                    <img src="/imagen/{{ $producto->imagen }}" class="w-16 h-[3vw]" alt="Imagen del producto">
-                                </td>
-                                <td class="flex flex-row justify-content-center border px-[2vw] py-2 text-gray-900 dark:text-white text-center">
-                                    <img src="/imagen/{{ $producto->ficha }}" class="w-16 h-[3vw]" alt="Imagen del producto">
-                                </td>
-                                <td class="border px-4 py-2 text-center">
-                                    <div class="flex justify-center text-[.9vw]">
-                                        <a href="{{ route('productoedit', $producto->id) }}"
-                                            class="bg-violet-500 dark:bg-violet-700 hover:bg-violet-600 dark:hover:bg-violet-800 text-white font-bold py-2 px-4 rounded mr-2">
-                                            Edit</a>
-                                        <button type="button"
-                                            class="bg-pink-400 dark:bg-pink-600 hover:bg-pink-500 dark:hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
-                                            onclick="confirmDelete('{{ $producto->id }}')">
-                                            Delete
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $producto->id }}</td>
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $producto->nombre }}</td>
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $producto->presentacion }}</td>
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $producto->slogan }}</td>
+                                    <td class=" border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        <img src="/imagen/{{ $producto->imagen }}" class="w-16 h-[3vw]"
+                                            alt="Imagen del producto">
+                                    </td>
+                                    <td
+                                        class="flex flex-row justify-content-center border px-[2vw] py-2 text-gray-900 dark:text-white text-center">
+                                        <img src="/imagen/{{ $producto->ficha }}" class="w-16 h-[3vw]"
+                                            alt="Imagen del producto">
+                                    </td>
+                                    <td class="border px-4 py-2 text-center">
+                                        <div class="flex justify-center text-[.9vw]">
+                                            <a href="{{ route('productoedit', $producto->id) }}"
+                                                class="bg-violet-500 dark:bg-violet-700 hover:bg-violet-600 dark:hover:bg-violet-800 text-white font-bold py-2 px-4 rounded mr-2">
+                                                Edit</a>
+                                            <button type="button"
+                                                class="bg-pink-400 dark:bg-pink-600 hover:bg-pink-500 dark:hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
+                                                onclick="confirmDelete('{{ $producto->id }}')">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
                             @endforeach
                         </tbody>
                     </table>
                     <!-- Agregar enlaces de paginación -->
-                    <div class="mt-4">
-                        {{ $productos->links() }}
+                    <div class="flex flex-row mt-4 w-full">
+                        <nav class="relative z-0 inline-flex shadow-sm w-full">
+                            <div class="w-full">
+                                <span class="w-full justify-center relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm">
+                                    {!! $productos->links()->render() !!}
+                                </span>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>

@@ -16,6 +16,7 @@ class ProductoSeeder extends Seeder
     {
         /* 0*/
         Productos::create([
+            'codigo' => 'A001',
             'nombre' => 'Artrixin gel',
             'presentacion' => 'Display x 25 sobres x 12g',
             'slogan' => '“Para inflamación y dolor Artrixin gel es lo mejor”',

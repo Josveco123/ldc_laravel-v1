@@ -15,7 +15,7 @@
                     <div class="w-full text-center text-black font-bold font-titulo2 text-md">{{ $blog->titulo }}</div>
                     <img class="float-left mr-4 mb-2 h-36 w-36 xl:h-48 xl:w-48 object-cover object-center" style="border-radius: 3vw;"
                         src="{{ asset("imagenblog/{$blog->imagen}") }}" alt="Descripción de la imagen">
-                    <p class="text-justify mt-4 font-mote text-md md:text-lg "> {!! nl2br(e($blog->descripcion)) !!}</p>
+                    <p class="text-justify mt-4 font-mote text-md "> {!! nl2br(e($blog->descripcion)) !!}</p>
                     <p class="text-sm text-center mt-4 font-biografia1 font-weight-normal">
                         <span class="font-bold ">{{ $blog->bibliografia }}</span>
                     </p>

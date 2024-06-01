@@ -1,6 +1,6 @@
 @extends('home')
-@section("proceso")
-<span class="text-lg">Procesando Blogs</span>
+@section('proceso')
+    <span class="text-lg">Procesando Blogs</span>
 @endsection
 @section('crud')
     <div class="py-10">
@@ -27,33 +27,45 @@
                         </thead>
                         <tbody>
                             @foreach ($blogs as $blog)
-                            <tr>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">{{ $blog->id }}</td>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">{{ $blog->titulo}}</td>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">{{ $blog->descripcion }}</td>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">{{ $blog->bibliografia }}</td>
-                                <td class=" border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                    <img src="imagenblog/{{ $blog->imagen }}" class="w-16 h-h-[3vw]" alt="Imagen del blog">
-                                </td>
+                                <tr>
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $blog->id }}</td>
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $blog->titulo }}</td>
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $blog->descripcion }}</td>
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $blog->bibliografia }}</td>
+                                    <td class=" border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        <img src="imagenblog/{{ $blog->imagen }}" class="w-16 h-h-[3vw]"
+                                            alt="Imagen del blog">
+                                    </td>
 
-                                <td class="border px-4 py-2 text-center">
-                                    <div class="flex justify-center">
-                                        <a href="{{ route('blogedit', $blog->id) }}"
-                                            class="bg-violet-500 dark:bg-violet-700 hover:bg-violet-600 dark:hover:bg-violet-800 text-white font-bold py-2 px-4 rounded mr-2">Edit</a>
-                                        <button type="button"
-                                            class="bg-pink-400 dark:bg-pink-600 hover:bg-pink-500 dark:hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
-                                            onclick="confirmDelete('{{ $blog->id }}')">
-                                            Delete
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <td class="border px-4 py-2 text-center">
+                                        <div class="flex justify-center">
+                                            <a href="{{ route('blogedit', $blog->id) }}"
+                                                class="bg-violet-500 dark:bg-violet-700 hover:bg-violet-600 dark:hover:bg-violet-800 text-white font-bold py-2 px-4 rounded mr-2">Edit</a>
+                                            <button type="button"
+                                                class="bg-pink-400 dark:bg-pink-600 hover:bg-pink-500 dark:hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
+                                                onclick="confirmDelete('{{ $blog->id }}')">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
                             @endforeach
                         </tbody>
                     </table>
                     <!-- Agregar enlaces de paginación -->
                     <div class="mt-4">
-                        {{ $blogs->links() }}
+                        <nav class="w-full relative z-0 inline-flex shadow-sm">
+                            <div class="w-full">
+                                <span
+                                    class="w-full relative inline-flex items-center justify-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm">
+                                    {!! $blogs->links()->render() !!}
+                                </span>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -92,4 +104,3 @@
         }
     }
 </script>
-
