@@ -59,7 +59,7 @@
                                         class="absolute mt-2 border-2 border-white rounded-lg  bg-gray-100 hover:bg-white hover:text-black/100" style="display: none;">
                                         @csrf
                                         <div
-                                            class="w-auto inline-flex p-2 flex-row justify-center text-center text-black/70">
+                                            class="w-20 inline-flex p-2 flex-row justify-center text-center text-black/70">
                                             <button type="submit" class="w-full flex flex-row  justify-center text-center">
                                                 Log out
                                             </button>

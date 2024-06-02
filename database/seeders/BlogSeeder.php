@@ -18,7 +18,7 @@ class BlogSeeder extends Seeder
             'descripcion' => 'La miel de abeja ha sido empleada durante miles de años por diferentes culturas, por su valor nutritivo y medicinal. Lo mismo se ha usado para conservar otros alimentos que como edulcorante, como origen de bebidas alcohólicas o con fines medicinales.1,2 Se entiende por miel la sustancia dulce natural producida por abejas Apis mellifera a partir del néctar de las plantas, o de secreciones vivas de estas, o de secreciones de insectos succionadores de plantas que quedan sobre sus partes vivas, y que las abejas recogen, transforman y combinan con sustancias específicas propias: depositan, deshidratan, almacenan y dejan en el panal para que madure y añeje.
 
             Las abejas productoras de miel aparecieron en la tierra desde hace 600 000 000 de años. Inicialmente, vivían en sus cuevas con la reproducción de condiciones favorables que proporcionó el hombre para optimizar la obtención de los productos de la colmena. La apicultura sufrió una gran transformación.',
-            'bibliografia' => 'Bibliográfica:Ajibola A, Chamunorwa JP, Erlwanger KH. Nutraceutical values of natural honey and its contribution to human health and wealth. Nutr Metab (Lond). 2012 Jun 20;9:61. Citado en PubMed; PMID: 22716101. 157 Palabra 193 con Bibliografía.',
+            'bibliografia' => 'Ref. Bibliográfica:Ajibola A, Chamunorwa JP, Erlwanger KH. Nutraceutical values of natural honey and its contribution to human health and wealth. Nutr Metab (Lond). 2012 Jun 20;9:61. Citado en PubMed; PMID: 22716101. 157 Palabra 193 con Bibliografía.',
         ]);
 
         Blog::create([
@@ -34,7 +34,7 @@ class BlogSeeder extends Seeder
             'imagen' => 'aceite.jpg',
             'titulo' => 'ACEITE DE ALMENDRAS',
             'descripcion' => 'El árbol de Lecythis minor DC, se conoce en la costa norte de Colombia con los nombres comunes de olleto y olla de mono; crece en zonas tropicales, puede alcanzar hasta 25 m de altura, su corteza es de color gris cubierto de estrías, el fruto es leñoso con forma de urna unida a una tapa que suelta en la madurez, puede contener de 10 a 16 semillas por fruto, las cuales tienen forma ovoide y color marrón ubicadas en un cuerpo carnoso; el tronco presenta excelentes condiciones para la extracción de madera y es usado en construcciones pesadas; el aceite extraído de las semillas es considerado popularmente como un agente hemostático (López y Montero, 2005). Existen alrededor de 27 especies del gènero lecythis reseñadas desde Nicaragua hasta Brasil, las más comunes son: Lecythis ampla Mier, elliptica, minor, ollaria, pisonis, usitata, zabucajo, prancei, serrata, lanceolata, chartacea, mesophyla, tuyrana, corrugata, entre otras.',
-            'bibliografia' => 'Bibliografia: Información Tecnológica Vol. 24(1), 59-68 (2013) doi: 10.4067/S0718-07642013000100008 Composición Química del Aceite de Almendras producidas por el Árbol Olleto Lafont 60 Información Tecnológica Vol. 24 Nº 1 2013
+            'bibliografia' => 'Ref. Bibliografia: Información Tecnológica Vol. 24(1), 59-68 (2013) doi: 10.4067/S0718-07642013000100008 Composición Química del Aceite de Almendras producidas por el Árbol Olleto Lafont 60 Información Tecnológica Vol. 24 Nº 1 2013
             175 palabras 205 con bibliografia',
         ]);
     }

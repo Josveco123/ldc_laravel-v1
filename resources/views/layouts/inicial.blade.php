@@ -17,7 +17,7 @@
 <div id="pagin1" class="pt-3 w-auto h-auto xl:h-[75vh]  flex flex-col  gap-x-4 pl-5 xl:flex-row">
     <!-- foto portada -->
     <div class="object-cover order-1 mr-5 h-full xl:order-2 w-full  xl:w-8/12 pt-2 xl:pt-10 pr-5">
-        <img class="w-full h-full border rounded-3xl" src="{{ asset('images/portada.png') }}" alt="" srcset="">
+        <img class="w-full h-full border rounded-3xl shadow-lg shadow-gray-300" src="{{ asset('images/portada.png') }}" alt="" srcset="">
     </div>
 
     <!-- google maps --->
