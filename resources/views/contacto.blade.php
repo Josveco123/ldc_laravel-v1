@@ -66,14 +66,9 @@
                             <span class="text-red-600">Celular: (+57) 3126869891</span>
                         </li>
                         <li class="mb-7">
-                            <span>sincelejo@laboratoriodelcaribe.com</span>
+                            <span>contabilidad@laboratoriodelcaribe.com</span>
                             <br />
                             <span class="text-red-600">Celular: (+57) 3135120781</span>
-                        </li>
-                        <li class="mb-7">
-                            <span> monteria@laboratoriodelcaribe.com</span>
-                            <br />
-                            <span class="text-red-600">Celular: (+57) 3126874903</span>
                         </li>
                         <li class="mb-7">
                             <span>gerencia@laboratoriodelcaribe.com</span>

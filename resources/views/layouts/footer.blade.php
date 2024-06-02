@@ -4,13 +4,14 @@
             Laboratorio del Caribe SAS.
         </div>
         <div class="flex items-center justify-center border-r-4" >
-            <ul class="list-disc pt-2 leading-tight text-xs sm:text-sm md:text-md lx_text-lg">
+            <ul class="list-disc pt-2 leading-tight text-xs sm:text-sm">
                 <li><span class="font-bold">Dirección:</span> Calle 38 No. 4A-184 Lt-1 Manz A</li>
                 <li>Parque Industrial y Comercial -Sincelejo (Sucre)</li>
                 <li><span class="font-bold">Telefax:</span> 605 2732307</li>
                 <li><span class="font-bold">Movil:</span> (+57) 312 686 9891</li>
                 <li><span class="font-bold">E-Mail:</span> comercial@laboratoriodelcaribe.com</li>
-                <li><span class="font-bold">Banco de Colombia:</span> C.C. Nro.(506 04761202)</li>
+                <li><span class="font-bold">Banco de Colombia:</span> C.C. Nro.(506-047612-02)</li>
+                <li><span class="font-bold">Convenio:</span> Nro. 16261</li>
             </ul>
         </div>
     </div>
@@ -42,8 +43,7 @@
         <div class="flex items-center justify-center border-r-4 border-white" >
             <ul class="list-disc pt-2 leading-tight text-xs sm:text-sm md:text-md lx_text-lg">
                 <li>comercial@laboratoriodelcaribe.com</li>
-                <li>monteria@laboratoriodelcaribe.com</li>
-                <li>sincelejo@laboratoriodelcaribe.com</li>
+                <li>contabilidad@laboratoriodelcaribe.com</li>
                 <li>ventas@laboratoriodelcaribe.com</li>
                 <li>gerencia@laboratoriodelcaribe.com</li>
             </ul>

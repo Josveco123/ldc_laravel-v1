@@ -20,7 +20,7 @@
 <!-- se inserta cuerpo del trabajo -->
 @section('content')
     <div class="w-full h-auto flex flex-col gap-y-1 p-5">
-        <div class="w-full flex justify-center text-md md:text-2xl lg:text-4xl text-red-600 font-titulo1">
+        <div class="w-full flex justify-center text-md md:text-2xl  text-red-600 font-titulo1">
             <span class="lg:ml-[25vw]">ACERCA</span>
             <span class="mx-2 lg:mx-6">DE</span>
             <span>NOSOTROS</span>
@@ -31,9 +31,9 @@
 
         <div class="w-full flex flex-grow gap-x-0 ">
             <div class="w-[25vw] max-h-full ml-5 lg:ml-14 rounded-r-full pr-4 bg-red-600 hidden lg:block ">
-                <img class="w-[25vw] h-full rounded-r-full" src="{{ asset('images/nos11.jpg') }}" alt="" srcset="">
+                <img class="w-[25vw] h-full rounded-r-full" src="{{ asset('images/nos_resena.jpg') }}" alt="" srcset="">
             </div>
-            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw] pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl  lg:ml-[3vw] pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Reseña Historica
                 </span>
@@ -51,11 +51,11 @@
         <div class="w-full flex flex-grow gap-x-0 ">
 
             <div class="w-[25vw] max-h-full ml-14  rounded-r-full pr-4 bg-red-600  hidden lg:block">
-                <img class="w-[26vw] h-full bg-white rounded-r-full " src="{{ asset('images/nos2.png') }}" alt=""
+                <img class="w-[26vw] h-full bg-white rounded-r-full " src="{{ asset('images/nos_politica_calidad.jpg') }}" alt=""
                     srcset="">
             </div>
 
-            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Politícas de la calidad</span>
 
@@ -79,10 +79,10 @@
 
         <div class="w-full flex flex-grow gap-x-0">
             <div class="w-[25vw] max-h-full ml-14  rounded-r-full pr-4 bg-red-600  hidden lg:block">
-                <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos31.jpg') }}" alt=""
+                <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos_mision.jpg') }}" alt=""
                     srcset="">
             </div>
-            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl  lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Mision</span>
 
@@ -98,10 +98,10 @@
         @include('layouts.lineasrojas')
         <div class="w-full flex flex-grow gap-x-0">
             <div class="w-[25vw] max-h-full ml-14  rounded-r-full pr-4 bg-red-600  hidden lg:block">
-                <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos44.jpeg') }}" alt=""
+                <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos_vision.jpg') }}" alt=""
                     srcset="">
             </div>
-            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Vision</span>
 
@@ -116,10 +116,10 @@
         @include('layouts.lineasrojas')
         <div class="w-full flex flex-grow gap-x-0">
             <div class="w-[25vw] max-h-full ml-14  rounded-r-full pr-4 bg-red-600  hidden lg:block">
-                <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos61.jpg') }}" alt=""
+                <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos_valores_corporativos.jpg') }}" alt=""
                     srcset="">
             </div>
-            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl xl:text-2xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Valores corporativos</span>
                 <br />
