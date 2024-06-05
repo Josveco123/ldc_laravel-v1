@@ -15,7 +15,7 @@
                     @method('PUT')
                     <div class="mb-2">
                         <label for="titulo"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Titulo</label>
+                            class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Titulo</label>
                         <input type="text" name="titulo" id="titulo" value="{{ old('titulo', $blogs->titulo) }}"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             required>
@@ -31,14 +31,14 @@
 
                     <div class="mb-2">
                         <label for="descripcion"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Descripción</label>
+                            class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Descripción</label>
                         <textarea name="descripcion" id="descripcion"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-[10vh] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-32 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             required>{{ old('descripcion', $blogs->descripcion) }}</textarea>
                     </div>
-                    <div class="mb-2">
+                    <div class="mb-1">
                         <label for="bibliografia"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bibliografía</label>
+                            class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Bibliografía</label>
                         <textarea name="bibliografia" id="bibliografia"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-[10vh] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             required>
@@ -46,26 +46,27 @@
                     </div>
 
 
-                    <div class="flex flex-row justify-between  space-x-4 pt-10 h-[20vh] w-full">
+                    <div class="flex flex-row justify-center space-x-10 pt-2 h-auto w-auto ">
 
                         <!-- Comienza insertar imagen -->
-                        <div style="width: calc(50% - 5px);height: full;">
+                        <div class="w-auto p-1 h-auto ">
 
-                            <div class="flex flex-col w-full h-full">
+                            <div class="flex flex-col w-auto h-auto">
 
-                                <label class="uppercase md:text-sm text-xs text-gray-500 font-semibold mb-1 h-6 ">
+                                <label
+                                    class="w-auto flex flex-row justify-center text-center uppercase md:text-sm text-xs text-gray-500 font-semibold mb-1 h-6 ">
                                     Subir Imagen
                                 </label>
 
-                                <div class='flex items-center justify-center w-full h-full'>
+                                <div class='flex items-center justify-center w-auto h-full'>
 
                                     <label
                                         class='flex flex-col border-4 border-dashed w-full h-full hover:bg-gray-100 hover:border-purple-300 group'>
-                                        <div class='relative flex flex-col items-center justify-center p-1 h-full'>
+                                        <div class='relative flex flex-col items-center justify-center p-1 h-auto'>
                                             <div
-                                                class="absolute zone-10 flex items-center justify-center mt-1 mx-1 w-full h-full bg-transparent p-1">
+                                                class="absolute zone-10 flex items-center justify-center min-w-16  h-auto bg-transparent p-3">
                                                 <img id="imagenSeleccionada" src="/imagenblog/{{ $blogs->imagen }}"
-                                                    class="w-full h-full object-contain"
+                                                    class="w-auto h-full object-contain"
                                                     style="max-width: 100%; max-height: 100%;">
                                             </div>
                                             <svg class="w-10 h-10 text-purple-400 group-hover:text-purple-600"
@@ -77,7 +78,7 @@
                                             </svg>
                                             <p
                                                 class='text-sm text-gray-400 group-hover:text-purple-600 pt-1 tracking-wider'>
-                                                Seleccione la imagen
+
                                             </p>
                                         </div>
                                         <input name="imagen" id="imagen" type='file' class="hidden" />

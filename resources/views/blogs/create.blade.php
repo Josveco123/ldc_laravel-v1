@@ -49,22 +49,22 @@
                     <div class="flex flex-row justify-center space-x-4 pt-10 h-[20vh]">
 
                         <!-- Comienza insertar imagen -->
-                        <div style="width: calc(50% - 5px);height: full;">
+                        <div class="w-auto h-auto" >
 
-                            <div class="flex flex-col w-full h-full">
+                            <div class="flex flex-col w-auto h-full">
 
-                                <label class="uppercase md:text-sm text-xs text-gray-500 font-semibold mb-1 h-6 ">
+                                <label class="w-auto flex flex-row justify-center text-center  uppercase md:text-sm text-xs text-gray-500 font-semibold mb-1 h-6 ">
                                     Subir Imagen
                                 </label>
 
-                                <div class='flex items-center justify-center w-full h-full'>
+                                <div class='flex items-center justify-center w-auto h-auto'>
 
                                     <label
-                                        class='flex flex-col border-4 border-dashed w-full h-full hover:bg-gray-100 hover:border-purple-300 group'>
-                                        <div class='relative flex flex-col items-center justify-center p-1 h-full'>
+                                        class='flex flex-col border-4 border-dashed w-auto h-full hover:bg-gray-100 hover:border-purple-300 group'>
+                                        <div class='relative flex flex-col items-center justify-center p-2 h-auto '>
                                             <div
-                                                class="absolute zone-10 flex items-center justify-center mt-1 mx-1 w-full h-full bg-transparent p-1">
-                                                <img id="imagenSeleccionada" class="w-full h-full object-contain"
+                                                class="absolute zone-10 flex items-center justify-center mt-1 mx-1 min-w-40 h-full bg-transparent p-1">
+                                                <img id="imagenSeleccionada" class="w-auto h-full object-contain"
                                                     style="max-width: 100%; max-height: 100%;" src="url_de_tu_ficha.pdf">
                                             </div>
                                             <svg class="w-10 h-10 text-purple-400 group-hover:text-purple-600"
@@ -84,18 +84,19 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!--botones de seleccion        --->
-                    <div class="ml-[14vw]">
-                        <button type="submit"
-                            class="mt-8 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Save
-                        </button>
-                        <a href="{{ route('blogindex') }}"
-                            class="text-white ml-[4vw] bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
-                            Cancel
-                        </a>
+
+                        <!--botones de seleccion        --->
+                        <div class="w-auto p-20 flex flex-col space-y-8 justify-center items-center">
+                            <button type="submit"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Save
+                            </button>
+                            <a href="{{ route('blogindex') }}"
+                                class="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
+                                Cancel
+                            </a>
+                        </div>
                     </div>
                 </form>
 
