@@ -63,9 +63,6 @@ Route::get('/contactos', [Contactos::class, 'contactos'])->name('contactos');
 
 Route::post('/mostrar-ficha/{archivo}', [FichaController::class, 'mostrarficha'])->name('mostrar-ficha');
 
-Route::get('/nomostrarficha', [NoMostrarFicha::class, 'nomostrarficha'])->name('nomostrarficha');
-
-
 Route::post('/web', [Mailwebcontacto::class, 'enviarCorreo'])->name('enviarcorreo');
 Route::get('/distribuidor2', [Distribuidors::class, 'distribuidor2'])->name('distribuidor2');
 Route::get('/productos2', [Productos::class, 'productos'])->name('productos2');
