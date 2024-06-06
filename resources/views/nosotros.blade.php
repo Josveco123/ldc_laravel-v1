@@ -119,21 +119,21 @@
                 <img class="w-full h-full  rounded-r-full" src="{{ asset('images/nos_valores_corporativos.jpg') }}" alt=""
                     srcset="">
             </div>
-            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl lg:ml-[3vw]  pb-5 text-justify">
+            <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-lg lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Valores corporativos</span>
                 <br />
                 <span class="font-bold">Respeto: </span> Aceptamos las decisiones y acciones de los clientes internos y
                 externos siendo tolerantes.
-                <br /><br />
+                <br />
                 <span class="font-bold">Compromiso:</span> Damos lo máximo de cada uno de nosotros con sentido de
                 pertenencia hacia la empresa.
-                <br /><br />
+                <br />
                 <span class="font-bold">Honestidad:</span> Actuamos conforme a los intereses comunes y no particulares de
                 acuerdo a la ley y las costumbres.
-                <br /><br />
+                <br />
                 <span class="font-bold">Lealtad:</span> Somos fieles frente a los compromisos y objetivos de la empresa.
-                <br /><br />
+                <br />
                 <span class="font-bold">Responsabilidad: </span> Somos conscientes de nuestras actuaciones, cumpliendo
                 cabalmente de forma que se logren los objetivos de la empresa.
 

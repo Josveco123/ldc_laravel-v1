@@ -17,6 +17,7 @@ use App\Http\Controllers\Mailwebcontacto;
 use App\Http\Controllers\Usuarios;
 use App\Http\Middleware\CrudMiddleware;
 use App\Http\Controllers\auth\LoginController;
+use App\Http\Controllers\NoMostrarFicha;
 
 Route::get('/', [Welcome::class, 'welcome'])->name('welcome');
 
@@ -60,8 +61,9 @@ Route::get('/home', [HomeController::class, 'index'])->middleware('can:home')->n
 Route::get('/nosotros', [Nosotros::class, 'nosotros'])->name('nosotros');
 Route::get('/contactos', [Contactos::class, 'contactos'])->name('contactos');
 
-Route::post('/mostrar-ficha/{archivo}', [FichaController::class, 'mostrarficha'])
-    ->name('mostrar-ficha');
+Route::post('/mostrar-ficha/{archivo}', [FichaController::class, 'mostrarficha'])->name('mostrar-ficha');
+
+Route::get('/nomostrarficha', [NoMostrarFicha::class, 'nomostrarficha'])->name('nomostrarficha');
 
 
 Route::post('/web', [Mailwebcontacto::class, 'enviarCorreo'])->name('enviarcorreo');
