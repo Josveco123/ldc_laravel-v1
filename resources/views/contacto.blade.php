@@ -50,11 +50,11 @@
                 CONTACTOS
             </div>
         </div>
-        <div class="max-w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-12 xl:gap-x-16  px-5 md:px-8 lg:px-12 xl:px-20 justify-items-center py-5">
+        <div class="pb-20 max-w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-12 xl:gap-x-16  px-5 md:px-8 lg:px-12 xl:px-20 justify-items-center py-5">
             <div class="w-full h-full bg-red-100" style="border-radius: 3vw;">
                 <div class="w-full h-full bg-gray-50 ml-[-.5vw] mt-[-.5vw] px-[3vw] py-10 border-l-2 border-t-2 border-red-100"
                     style="border-radius: 3vw;">
-                    <ul class="w-full text-center text-sm sm:text-md md:text-lg lg:text-xl leading-tight  p-3">
+                    <ul class="w-full text-center text-sm sm:text-md md:text-lg leading-tight  p-3">
                         <li class="mb-7">
                             <span>ventas@laboratoriodelcaribe.com</span>
                             <br />
@@ -88,38 +88,38 @@
                 <div class="w-full h-full bg-gray-50 ml-[-.5vw] mt-[-.5vw] px-[3vw] pt-5 border-l-2 border-t-2 border-red-100 "
                     style="border-radius: 3vw;">
                     <div id="form-correo">
-                        <h2 class="text-xl md:text-3xl text-gray-400 font-bold">Queremos escucharte!</h2>
-                        <div class="mt-10">
+                        <h2 class="text-xl md:text-xl text-gray-400 font-bold">Queremos escucharte!</h2>
+                        <div class="mt-6">
                             <form id="formulario-correo" action="{{ route('enviarcorreo') }}"
-                                class="flex flex-col font-bold text-sm lg:text-lg text-gray-500  gap-y-3 " method="POST">
+                                class="flex flex-col font-bold text-sm lg:text-lg text-gray-500  gap-y-2 " method="POST">
                                 @csrf
                                 <div class="">
                                     <label class="" for="nombre">Nombre:</label>
                                     <br />
                                     <input type="text" id="nombre" name="name" required autofocus
-                                        class="w-full border border-red-200 rounded-md px-3 py-2 focus:outline-none focus:border-red-600" />
+                                        class="w-full border border-red-200 rounded-md px-3 py-0.5  focus:outline-none focus:border-red-600" />
                                 </div>
                                 <div>
                                     <label class="label-correo" for="correo">Correo:</label>
                                     <br />
                                     <input type="email" id="correo" name="email" required
-                                        class="w-full border border-red-200 rounded-md px-3 py-2 focus:outline-none focus:border-red-600" />
+                                        class="w-full border border-red-200 rounded-md px-3 py-0.5 focus:outline-none focus:border-red-600" />
                                 </div>
                                 <div>
                                     <label class="label-correo" for="telefono">Teléfono:</label>
                                     <br />
                                     <input type="text" id="telefono" name="phone" required
-                                        class="w-full border border-red-200 rounded-md px-3 py-2 focus:outline-none focus:border-red-600" />
+                                        class="w-full border border-red-200 rounded-md px-3 py-0.5 focus:outline-none focus:border-red-600" />
                                 </div>
                                 <div>
                                     <label class="label-correo" for="mensaje">Mensaje:</label>
                                     <br />
                                     <textarea id="mensaje" name="message" rows="4" required
-                                        class="w-full border border-red-200 rounded-md px-3 py-2 focus:outline-none focus:border-red-600"></textarea>
+                                        class="w-full border border-red-200 rounded-md px-3 py-0.5 focus:outline-none focus:border-red-600"></textarea>
                                 </div>
                                 <div>
                                     <button id="enviar-contacto"
-                                        class="enviar bg-red-600 text-white font-bold py-2 px-4 rounded-3xl hover:scale-110 "
+                                        class="enviar bg-red-600 text-white font-bold py-1 px-4 rounded-3xl hover:scale-110 "
                                         name="submit" type="submit">Enviar</button>
                                 </div>
                             </form>

@@ -20,11 +20,11 @@
         <p class="w-full flex flex-row text-center justify-center text-xk md:text-4xl font-titulo1 text-red-600 ">
             DISTRIBUIDORES
         </p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-8 gap-y-10 mb-20 mt-10 pl-10 pr-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-20 gap-y-16 mb-20 mt-10 pl-10 pr-10">
             @foreach ($distribuidores as $distribuidor)
-                <div class="pl-10 pr-10 w-full h-auto border-2 border-red-100 border-inherit shadow-2xl  flex flex-col  items-center"
+                <div class="pl-10 pr-10 pt-5 w-full h-auto border-2 border-red-100 border-inherit shadow-2xl  flex flex-col  items-center"
                     style="border-radius: 3vw;">
-                    <div class="h-80 w-auto">
+                    <div class="h-56 w-auto">
                         <img class="mx-auto block  h-full w-auto" src="imagendist/{{ $distribuidor->imagen }}"
                             alt={{ 'imagendist/'.$distribuidor->imagen }} srcset="">
                     </div>

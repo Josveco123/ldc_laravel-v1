@@ -19,7 +19,7 @@
     <div>
         <div class="pt-5 pb-20 ">
             <div
-                class="w-full flex justify-center text-center text-sm sm:text-lg  lg:text-3xl text-red-600 font-titulo1">
+                class="w-full flex justify-center text-center text-sm sm:text-lg  lg:text-4xl text-red-600 font-titulo1">
                 <span class="">Nuestros</span>
                 <span class="mx-3 md:mx-6">Productos</span>
             </div>

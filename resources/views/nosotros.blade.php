@@ -20,7 +20,7 @@
 <!-- se inserta cuerpo del trabajo -->
 @section('content')
     <div class="w-full h-auto flex flex-col gap-y-1 p-5">
-        <div class="w-full flex justify-center text-md md:text-2xl  text-red-600 font-titulo1">
+        <div class="w-full flex justify-center text-md md:text-4xl  text-red-600 font-titulo1">
             <span class="lg:ml-[25vw]">ACERCA</span>
             <span class="mx-2 lg:mx-6">DE</span>
             <span>NOSOTROS</span>
