@@ -14,7 +14,7 @@ class Mailwebcontacto extends Controller
         $data = $request->only('name', 'email', 'phone', 'message');
 
         try {
-            Mail::to("josveco@gmail.com")->send(new Webcontacto($data));
+            Mail::to("comercial@laboratoriodelcaribe.com")->send(new Webcontacto($data));
             return redirect()->back()->with('success', 'Correo enviado exitosamente.');
         } catch (Exception $e) {
             // Aquí capturas la excepción si el correo no se pudo enviar
