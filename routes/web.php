@@ -17,7 +17,7 @@ use App\Http\Controllers\Mailwebcontacto;
 use App\Http\Controllers\Usuarios;
 use App\Http\Middleware\CrudMiddleware;
 use App\Http\Controllers\auth\LoginController;
-use App\Http\Controllers\NoMostrarFicha;
+use App\Http\Controllers\VisitaController;
 
 Route::get('/', [Welcome::class, 'welcome'])->name('welcome');
 
@@ -76,3 +76,7 @@ Route::get('/usuarios/{id}', [Usuarios::class, 'show'])->middleware('can:usersho
 Route::post('/usuarios', [Usuarios::class, 'store'])->middleware('can:userstore')->name('userstore'); // Crear un nuevo cliente
 Route::put('/usuarios/{id}', [Usuarios::class, 'update'])->middleware('can:userupdate')->name('userupdate'); // Actualizar un cliente existente
 Route::delete('/usuarios/{id}/destroy', [Usuarios::class, 'destroy'])->middleware('can:usereliminar')->name('usereliminar'); // Eliminar un cliente
+
+
+// ruta para expostacion de archivos
+Route::get('visita/export', [VisitaController::class, 'export'])->middleware('can:export')->name('export');

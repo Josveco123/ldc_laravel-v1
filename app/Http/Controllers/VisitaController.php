@@ -2,64 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Visita;
-use Illuminate\Http\Request;
+use App\Exports\ClientExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class VisitaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function export()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Visita $visita)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Visita $visita)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Visita $visita)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Visita $visita)
-    {
-        //
+        return Excel::download(new ClientExport, 'client.xlsx');
     }
 }

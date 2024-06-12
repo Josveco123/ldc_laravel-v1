@@ -45,9 +45,9 @@
 @section('content')
     <div class="flex flex-col justify-center items-center text-center  w-full h-auto px-3 md:px-8 lg:px-12 xl:px-16 border-0 ">
 
-        <div class=" h-18 w-80 mb-5 flex flex-row justify-center text-center mt-5 pb-3 pt-3 border-0 rounded-3xl">
+        <div class=" h-18 w-80  flex flex-row justify-center text-center  pb-3 pt-3 border-0 rounded-3xl">
             <div
-                class="w-auto h-full text-lg md:text-xl lg:text-3xl xl:text-4xl py-1 px-4 bg-gray-50 flex flex-row text-center justify-center font-titulo1 text-red-600 border-l-2 border-t-2 border-red-100 rounded-3xl">
+                class="w-auto h-full text-lg md:text-xl lg:text-3xl  py-1 px-4 bg-gray-50 flex flex-row text-center justify-center font-titulo1 text-red-600 border-l-2 border-t-2 border-red-100 rounded-3xl">
                 CONTACTOS
             </div>
         </div>

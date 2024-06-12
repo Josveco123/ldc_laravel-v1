@@ -16,7 +16,6 @@ class Visita extends Model
         'whatsapp',
         'ciudad',
         'fecha_visita',
-        'user_id',
     ];
 
     /**

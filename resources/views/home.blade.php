@@ -35,6 +35,10 @@
                                         class="menu-option border-2 px-2 hover:border-red-500 hover:bg-gray-300 hover:rounded-lg">
                                         <a class="no-underline" href="{{ route('userindex') }}">User</a>
                                     </li>
+                                    <li
+                                        class="menu-option border-2 px-2 hover:border-red-500 hover:bg-gray-300 hover:rounded-lg">
+                                        <a class="no-underline" href="{{ route('export') }}">Visitas Exp.</a>
+                                    </li>
                                 @endhasrole
                             </ul>
                         </div>

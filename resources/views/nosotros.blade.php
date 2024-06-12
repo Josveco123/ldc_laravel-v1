@@ -38,7 +38,7 @@
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center mb-2">
                     Reseña Historica
                 </span>
-                <span class="leading-loose">
+                <span class="leading-normal">
                     Laboratorio del caribe S.A.S. inició labores en Sincelejo el 20 de marzo de 1984. Se obtiene el primer
                     Registro Sanitario para el producto comercializado bajo la marca Artrixin iniciándose la expansión y
                     posicionamiento en todo el territorio Nacional.
@@ -62,7 +62,7 @@
             <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Politícas de la calidad</span>
-                <span class="leading-loose">
+                <span class="leading-normal">
                     Laboratorio del Caribe S.A.S., es una empresa farmacéutica que está en un mejoramiento continuo,
                     ofreciendo
                     productos y servicios confiables que cumplan con las normas de Buenas Prácticas de Manufactura, para
@@ -92,7 +92,7 @@
             <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl  lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Mision</span>
-                <span class="leading-loose">
+                <span class="leading-normal">
                     Laboratorio del Caribe S.A.S., es una empresa farmacéutica que tiene como misión, comercializar
                     productos de
                     excelente calidad, cumpliendo con todas las Normas exigidas por las entidades que nos vigilan,
@@ -115,7 +115,7 @@
             <p class="px-7 w-full lg:mr-10 flex flex-col justify-center  md:text-xl lg:ml-[3vw]  pb-5 text-justify">
                 <span class="font-bold text-red-600 md:text-2xl lg:text-3xl lg:text-center">
                     Vision</span>
-                <span class="leading-loose">
+                <span class="leading-normal">
                     Laboratorios del Caribe S.A.S. va a ser uno de los más reconocidos Laboratorios farmacéuticos de
                     Colombia,
                     ampliando su línea de productos, para hacer una contribución a la sociedad, a través de sus productos,

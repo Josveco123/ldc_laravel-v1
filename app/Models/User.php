@@ -54,7 +54,7 @@ class User extends Authenticatable
         ];
     }
 
-    public function visits()
+    public function visita()
     {
         return $this->hasMany(Visita::class);
     }

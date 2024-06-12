@@ -64,5 +64,9 @@ user
         Permission::create(['name' => 'usereliminar'])->assignRole($master);
         Permission::create(['name' => 'userupdate'])->assignRole($master);
         Permission::create(['name' => 'userstore'])->assignRole($master);
+           /*
+        user
+        */
+        Permission::create(['name' => 'export'])->assignRole($master);
     }
 }
